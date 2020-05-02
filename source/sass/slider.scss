@@ -1,0 +1,61 @@
+.slider-subheader__text {
+  text-align: center;
+  padding: 25px 0 65px;
+}
+
+.slider-subheader__messege {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #ff7931;
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 4.5px;
+  box-sizing: border-box;
+}
+
+.slider-subheader__title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 30px 0 20px;
+}
+
+.slider-subheader__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 456px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  padding: 0 20px;
+}
+
+.subheader-bg-one,
+.subheader-bg-two,
+.subheader-bg-three,
+.subheader-bg-fourth,
+.subheader-bg-fifth {
+  background-image: url("../img/slide_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-subheader {
+  position: relative;
+}
+.slider__list--subheader .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+
+  button {
+    outline: none;
+  }
+}
