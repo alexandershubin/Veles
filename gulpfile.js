@@ -19,7 +19,6 @@ let uglify = require('gulp-uglify-es').default;
 const htmlmin = require("gulp-htmlmin");
 const server = require("browser-sync").create();
 
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
   .pipe(plumber())
@@ -94,7 +93,7 @@ gulp.task("webp", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
+    "source/fonts/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.html",
