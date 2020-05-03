@@ -49,6 +49,7 @@
 .slider-subheader {
   position: relative;
 }
+
 .slider__list--subheader .owl-dots {
   position: absolute;
   bottom: 20px;
@@ -57,5 +58,100 @@
 
   button {
     outline: none;
+  }
+}
+
+@media(min-width: $tablet-width-md) {
+  .slider-subheader__arraws {
+    position: relative;
+    height: 30px;
+    border-right: 2px solid #fff;
+    margin: 0 auto 55px;
+    text-align: center;
+    width: 0;
+
+    &::before,
+    &::after {
+      content: url("../img/arrow.svg");
+      position: absolute;
+    }
+
+    &::before {
+      top: 6px;
+      left: -40px;
+    }
+
+    &::after {
+      top: 3px;
+      right: -40px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .slider-subheader__text {
+    padding: 63px 0 47px;
+  }
+
+  .slider-subheader__title {
+    font-size: 72px;
+    line-height: 85px;
+    margin: 44px 0 42px;
+  }
+
+  .slider-subheader__description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 456px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    padding: 0 20px;
+  }
+
+  .slider__list--subheader .owl-nav {
+    position: absolute;
+    top: 56%;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    max-width: 1180px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .slider__list--subheader .owl-prev,
+  .slider__list--subheader .owl-next {
+    position: relative;
+    outline: none;
+
+    &:hover {
+      background: red;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 64px;
+      height: 1px;
+      background: #ffffff;
+    }
+  }
+
+  .slider__list--subheader .owl-prev {
+    &::before {
+      right: -72px;
+    }
+  }
+
+  .slider__list--subheader .owl-next {
+    &::before {
+      left: -72px;
+    }
   }
 }
