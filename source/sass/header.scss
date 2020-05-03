@@ -3,7 +3,7 @@
 
   &::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -14,8 +14,8 @@
 }
 
 .header__menu {
-  position: absolute;
-  top: 30%;
+  position: fixed;
+  top: 8%;
   left: -100%;
   width: 100%;
   height: 100%;
@@ -26,10 +26,12 @@
 
 .menu__list {
   background: #ffffff;
+  padding-bottom: 30px;
 }
 
 .header__menu.active {
   left: 0%;
+  overflow: scroll;
 }
 
 .header__burger {
@@ -74,7 +76,7 @@
 }
 
 .header__burger.active {
-  background: #ffffff;
+  background: none;
   right: 0;
   left: auto;
 
@@ -112,7 +114,7 @@
     text-align: center;
     letter-spacing: 1px;
     margin: 0;
-    padding: 40px 50px 30px;
+    padding: 45px 50px 30px;
   }
 }
 
