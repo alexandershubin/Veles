@@ -30,13 +30,14 @@ $('.slider__list--gallery').owlCarousel({
       nav: true,
       dots: false,
       center: true,
-      navText: ['&#9658;\t', '&#9658;\t']
+      navText: ['&#9658;', '&#9658;']
     },
     1200:{
       margin:30,
       items: 4,
       nav: true,
-      dots: false
+      dots: false,
+      navText: ['&#9658;', '&#9658;']
     }
   }
 });
