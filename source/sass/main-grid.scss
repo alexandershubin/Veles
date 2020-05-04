@@ -1,0 +1,34 @@
+@media(min-width: $tablet-width-lg) {
+  .main-news__grid {
+    &--areas {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 30px;
+      grid-template-areas:
+      "news sidebar"
+      "reviews sidebar"
+      "ballet sidebar"
+      "gallery gallery"
+    }
+  }
+
+  .news--area {
+    grid-area: news;
+  }
+
+  .reviews--area {
+    grid-area: reviews;
+  }
+
+  .see-ballet--area {
+    grid-area: ballet;
+  }
+
+  .slider-gallery--area {
+    grid-area: gallery;
+  }
+
+  .sidebar--area {
+    grid-area: sidebar;
+  }
+}
