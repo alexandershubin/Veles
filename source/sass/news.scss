@@ -24,6 +24,13 @@
   display: block;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    .news__h3 {
+      color: #FF7931;
+      transition: .3s ease;
+    }
+  }
 }
 
 .news__text {
@@ -62,6 +69,24 @@
   align-items: center;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    .news__h4 {
+      color: #FF7931;
+      transition: .3s ease;
+    }
+
+    .img-wrap .overlay {
+      opacity: 1;
+    }
+    .img-wrap:before {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+    }
+  }
 }
 
 .news__h4 {
@@ -89,7 +114,22 @@
   transition: .4s ease-in-out;
 
   &:hover {
+    .reviews__h3 {
+      color: #FF7931;
+      transition: .3s ease;
+    }
 
+    .img-wrap .overlay {
+      opacity: 1;
+    }
+
+    .img-wrap:before {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+    }
   }
 }
 
@@ -99,8 +139,26 @@
   gap: 28px 30px;
 }
 
+.img-wrap {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background: rgba(7, 6, 17, 0.7);
+}
+
 .rewiews__img {
   width: 100%;
+  height: auto;
 }
 
 .reviews__h3 {
@@ -110,6 +168,12 @@
   line-height: 31px;
   margin: 0;
   padding: 15px 0 10px;
+  transition: .3s ease;
+
+  &:hover {
+    color: #FF7931;
+    transition: .3s ease;
+  }
 }
 
 .see-ballet {
